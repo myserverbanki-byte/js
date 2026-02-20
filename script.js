@@ -5,19 +5,19 @@ class Button {
     text = ''
 
     constructor(text) {
-        this.text = text
-        this.render()
+        this.text = text;
+        this.render();
 
     }
     render() {
-        const placeTorender = document.querySelector('.btns')
+        const placeTorender = document.querySelector('.btns');
         if (placeTorender) {
-            const btn = document.createElement('button')
-            btn.classList.add('btn')
-            btn.innerHTML = this.text
-            placeTorender.appendChild(btn)
+            const btn = document.createElement('button');
+            btn.classList.add('btn');
+            btn.innerHTML = this.text;
+            placeTorender.appendChild(btn);
 
         }
     }
 }
-new Button('click me')
+new Button('click me');
