@@ -10,13 +10,14 @@ class Button {
 
     }
     render() {
-        const placeTorender = document.querySelector('.btns');
-        if (placeTorender) {
+        const placeToRender = document.querySelector('.btns');
+        if (placeToRender) {
             const btn = document.createElement('button');
             btn.classList.add('btn');
             btn.innerHTML = this.text;
-            placeTorender.appendChild(btn);
-
+            placeToRender.appendChild(btn);
+        } else {
+            console.warn('Элемент с классом "btns" не найден в DOM. Кнопка не будет отображена.');
         }
     }
 }
