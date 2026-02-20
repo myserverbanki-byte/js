@@ -2,6 +2,8 @@ const fs = require('fs');
 const text = fs.readFileSync('script.js', 'utf-8');
 console.log(text);
 class Button {
+    text = ''
+
     constructor(text) {
         this.text = text
         this.render()
@@ -18,4 +20,4 @@ class Button {
         }
     }
 }
-new Button('click me');
+new Button('click me')
