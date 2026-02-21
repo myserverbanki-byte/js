@@ -40,4 +40,4 @@ class GoodItem {
         }
     }
 }
-const List = new List()
+const list = new List()
