@@ -28,16 +28,17 @@ class GoodItem {
     price = 0
     constructor({ name, price }) {
         this.name = name
-        this.price - price
+        this.price = price
 
     }
     render() {
         const placeToRender = document.querySelector('.goods-list')
         if (placeToRender) {
-            const block = document.createElement(';div')
-            block.innerHTML = `Товар : ${this.name} = ${this.price}`
+            const block = document.createElement('div')
+            block.innerHTML = `Товар : ${this.name}, цена ${this.price} руб.`
             placeToRender.appendChild(block)
         }
     }
 }
 const list = new List()
+list.render();
